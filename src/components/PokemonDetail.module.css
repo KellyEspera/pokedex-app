@@ -1,0 +1,115 @@
+.panel {
+  background: linear-gradient(160deg, #1a1a3e 0%, #0f0f23 100%);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 24px;
+  position: sticky;
+  top: 20px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.panel::-webkit-scrollbar       { width: 5px; }
+.panel::-webkit-scrollbar-track { background: transparent; }
+.panel::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  color: #94a3b8;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+}
+.closeBtn:hover { background: rgba(255,255,255,0.15); color: #fff; }
+
+.hero { text-align: center; margin-bottom: 18px; }
+
+.spriteGlow {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.sprite { width: 140px; height: 140px; }
+
+.dexNum  { color: #475569; font-size: 9px;  font-family: "Press Start 2P", monospace; margin: 0; }
+.name    { color: #f1f5f9; font-size: 14px; font-family: "Press Start 2P", monospace; text-transform: capitalize; letter-spacing: 1px; margin: 6px 0 4px; }
+.genus   { color: #64748b; font-size: 7px;  font-family: "Press Start 2P", monospace; margin: 0 0 10px; }
+
+.types { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.infoCell {
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.infoLabel { color: #475569; font-size: 7px; font-family: "Press Start 2P", monospace; letter-spacing: 1px; }
+.infoValue { color: #e2e8f0; font-size: 9px; font-family: "Press Start 2P", monospace; text-transform: capitalize; }
+
+.section {
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  color: #475569;
+  font-size: 8px;
+  font-family: "Press Start 2P", monospace;
+  letter-spacing: 2px;
+  margin: 0 0 10px;
+}
+
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.pill {
+  background: rgba(255,255,255,0.07);
+  color: #94a3b8;
+  font-size: 7px;
+  font-family: "Press Start 2P", monospace;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.08);
+  text-transform: capitalize;
+}
+
+.description {
+  color: #94a3b8;
+  font-size: 8px;
+  font-family: "Press Start 2P", monospace;
+  line-height: 2;
+  margin: 0;
+}
+
+.loadingSpec {
+  color: #475569;
+  font-size: 8px;
+  font-family: "Press Start 2P", monospace;
+  margin-bottom: 12px;
+}

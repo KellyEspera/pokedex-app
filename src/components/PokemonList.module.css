@@ -1,0 +1,61 @@
+.section { width: 100%; }
+
+.count {
+  color: #475569;
+  font-size: 8px;
+  font-family: "Press Start 2P", monospace;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.compact {
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 60px 20px;
+  color: #64748b;
+  font-size: 9px;
+  font-family: "Press Start 2P", monospace;
+  text-align: center;
+  line-height: 2;
+}
+
+.empty span { font-size: 40px; }
+
+.loadMoreRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.loadMore {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 9px;
+  font-family: "Press Start 2P", monospace;
+  cursor: pointer;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 18px rgba(99,102,241,0.4);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.loadMore:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(99,102,241,0.6);
+}
+
+.loadMore:disabled { opacity: 0.5; cursor: wait; }

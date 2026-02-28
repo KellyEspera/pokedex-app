@@ -1,0 +1,10 @@
+.badge {
+  color: #fff;
+  font-size: 8px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: "Press Start 2P", monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+}

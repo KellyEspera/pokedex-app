@@ -1,0 +1,69 @@
+.bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputWrap {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 36px 10px 36px;
+  background: rgba(255,255,255,0.06);
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 10px;
+  font-family: "Press Start 2P", monospace;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.input::placeholder { color: #64748b; }
+.input:focus        { border-color: rgba(99,102,241,0.6); }
+
+.clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 12px;
+  cursor: pointer;
+}
+.clear:hover { color: #e2e8f0; }
+
+.select {
+  background: rgba(255,255,255,0.06);
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 8px;
+  font-family: "Press Start 2P", monospace;
+  padding: 10px 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.select option {
+  background: #1a1a3e;
+  color: #e2e8f0;
+}
